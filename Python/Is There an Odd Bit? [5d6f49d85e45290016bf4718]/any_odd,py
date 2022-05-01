@@ -6,6 +6,16 @@ def any_odd(x):
     return False
 
 
+## This is a much better solution.
+# def any_odd(x):
+#     print("------------")
+#     print(f"Number: {x}")
+#     print(f"Bin: {list(bin(x))}")
+#     print(f"Odds From right: {bin(x)[::-2]}")
+#     print(f"Odds From Right Truncated: {bin(x)[2::][::-2]}")
+#     return 1 if "1" in bin(x)[-2::-2] else 0
+
+
 print(any_odd(2))  ## True
 print(any_odd(5))  ## True
 print(any_odd(170))  ## False
