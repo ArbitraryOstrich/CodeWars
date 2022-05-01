@@ -1,0 +1,11 @@
+def any_odd(x):
+    a = list(bin(x)[2::])[::-1]
+    for i in range(0, len(a)):
+        if i % 2 != 0 and a[i] == "1":
+            return True
+    return False
+
+
+print(any_odd(2))  ## True
+print(any_odd(5))  ## True
+print(any_odd(170))  ## False
