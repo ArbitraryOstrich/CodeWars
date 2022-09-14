@@ -1,5 +1,5 @@
 def any_odd(x):
-    a = list(bin(x)[2::])[::-1]
+    a = bin(x)[2::][::-1]
     for i in range(0, len(a)):
         if i % 2 != 0 and a[i] == "1":
             return True
